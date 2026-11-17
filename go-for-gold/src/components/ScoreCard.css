@@ -1,0 +1,71 @@
+.score-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.score-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-card__badge {
+  background: var(--olive-900);
+  color: var(--sand-100);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.score-card__main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.score-card__number {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+}
+
+.score-card__unit {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.score-card__change {
+  margin-left: auto;
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+.score-card__bar {
+  height: 10px;
+  border-radius: 5px;
+  background: #e6e1d1;
+  overflow: hidden;
+}
+
+.score-card__fill {
+  height: 100%;
+  background: var(--gold-500);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.score-card__targets {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}

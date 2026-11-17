@@ -1,0 +1,82 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: rgba(20, 26, 15, 0.6);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.change-sheet {
+  width: 100%;
+  max-width: 480px; /* same width as .app-shell */
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fbfaf5;
+  border-radius: 18px 18px 0 0;
+  padding: 24px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.change-sheet__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.change-sheet__hint {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.change-sheet__options {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.change-sheet__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.change-sheet__option input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--olive-900);
+}
+
+.change-sheet__other-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.change-sheet__other {
+  height: 46px;
+  padding: 0 14px;
+  border: 1.5px solid var(--khaki-400);
+  border-radius: 8px;
+  background: var(--white);
+  font-size: 16px;
+}
+
+.change-sheet__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.change-sheet__actions .btn {
+  flex: 1;
+}

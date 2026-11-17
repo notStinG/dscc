@@ -1,0 +1,61 @@
+.header {
+  background: var(--olive-900);
+  padding: 10px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__tag {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: #a9b394;
+}
+
+.header__account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px; /* big enough to tap */
+  color: var(--sand-100);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold-500);
+  color: var(--olive-900);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.header__title {
+  margin: 0;
+  font-family: var(--font-logo);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--gold-500);
+}
+
+.header__page-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--sand-100);
+}

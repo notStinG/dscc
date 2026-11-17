@@ -1,0 +1,51 @@
+.perf-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.perf-chart__grid {
+  stroke: #e6e1d1;
+  stroke-width: 1;
+}
+
+.perf-chart__ylabel {
+  font-size: 10px;
+  fill: var(--muted);
+  text-anchor: end;
+}
+
+.perf-chart__xlabel {
+  font-size: 10px;
+  font-weight: 600;
+  fill: var(--muted);
+  text-anchor: middle;
+}
+
+.perf-chart__gold {
+  stroke: var(--gold-500);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+.perf-chart__gold-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  fill: var(--gold-700);
+  text-anchor: end;
+}
+
+.perf-chart__line {
+  fill: none;
+  stroke: var(--olive-900);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.perf-chart__dot {
+  fill: var(--gold-500);
+  stroke: var(--olive-900);
+  stroke-width: 2;
+}

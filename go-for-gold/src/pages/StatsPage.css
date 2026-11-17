@@ -1,0 +1,150 @@
+/* ---------- Tiles ---------- */
+.stats__tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stats__tile {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stats__tile-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stats__tile-value {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.stats__tile-value--gold {
+  color: var(--gold-700);
+}
+
+.stats__tile-when {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- Chart card ---------- */
+.stats__chart-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stats__chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.stats__h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.stats__caption {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Month / Day switch */
+.toggle {
+  display: flex;
+  border: 1.5px solid var(--olive-900);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.toggle button {
+  height: 44px;
+  padding: 0 12px;
+  border: none;
+  background: transparent;
+  color: var(--olive-900);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle button[aria-pressed='true'] {
+  background: var(--olive-900);
+  color: var(--sand-100);
+}
+
+/* ---------- Progress ---------- */
+.stats__progress {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stats__rows {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.stats__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6e1d1;
+}
+
+.stats__row:last-child {
+  border-bottom: none;
+}
+
+.stats__row-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__row-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.stats__row-change {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.stats__legend {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Status pills */
+.pill {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.pill--improving { background: #e1ead5; color: var(--green-700); }
+.pill--stable { background: #f2e8c6; color: #5e4e0e; }
+.pill--needs-work { background: #f5ddd0; color: #8a3310; }

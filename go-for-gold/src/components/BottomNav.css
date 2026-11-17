@@ -1,0 +1,29 @@
+.bottom-nav {
+  position: sticky; /* stays at the bottom of the screen while scrolling */
+  bottom: 0;
+  display: flex;
+  background: var(--olive-900);
+  border-top: 3px solid var(--gold-500);
+  padding: 6px 8px 10px;
+}
+
+.bottom-nav__link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: 52px;
+  color: #c2c8b3;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bottom-nav__link.active {
+  color: var(--gold-500);
+}

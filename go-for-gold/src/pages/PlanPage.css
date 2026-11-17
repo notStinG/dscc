@@ -1,0 +1,208 @@
+/* ---------- Goal for today ---------- */
+.plan__focus {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.plan__focus-station {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.plan__focus-reason {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.plan__focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.plan__mini {
+  background: var(--sand-100);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.plan__mini-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.plan__mini-value {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.plan__mini-value--gold {
+  color: var(--gold-700);
+}
+
+/* ---------- Week ---------- */
+.plan__week {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan__week-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.plan__week-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.plan__week-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.plan__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plan__day {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.plan__day-name {
+  width: 40px;
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--olive-900);
+}
+
+.plan__day-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.plan__day-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.plan__day-detail {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.plan__day input {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  accent-color: var(--green-700);
+  cursor: pointer;
+}
+
+.plan__day--done .plan__day-title {
+  text-decoration: line-through;
+}
+
+/* ---------- Banner ---------- */
+.plan__banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e1ead5;
+  color: var(--green-700);
+  border-radius: 10px;
+  padding: 0 4px 0 14px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.plan__banner span {
+  flex-grow: 1;
+}
+
+.plan__banner button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ---------- Why this plan ---------- */
+.plan__why {
+  background: var(--olive-900);
+  color: var(--sand-100);
+  border-radius: var(--radius-card);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan__why-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan__why h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--gold-500);
+}
+
+.plan__why p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.plan__ai-tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid #a9b394;
+  color: #c2c8b3;
+  border-radius: 4px;
+  padding: 3px 8px;
+}

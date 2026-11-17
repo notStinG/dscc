@@ -1,0 +1,128 @@
+/* Design tokens: change a colour here and it updates everywhere. */
+:root {
+  --olive-900: #26311f;   /* header, nav, dark buttons */
+  --sand-100: #f1eee3;    /* page background */
+  --khaki-300: #d6d0bc;   /* card borders */
+  --khaki-400: #b9b29a;   /* input borders */
+  --gold-500: #c9a13b;    /* accent */
+  --gold-700: #6b5210;    /* gold text on light backgrounds */
+  --green-700: #2f5520;   /* "improved" */
+  --ink: #1d2318;         /* main text */
+  --muted: #545b4a;       /* secondary text */
+  --white: #ffffff;
+
+  --font-body: 'Barlow', system-ui, sans-serif;
+  --font-heading: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-logo: 'Saira Stencil One', var(--font-heading);
+
+  --radius-card: 12px;
+  --radius-button: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--sand-100);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+a { color: var(--gold-700); }
+button, input { font-family: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--gold-500);
+  outline-offset: 2px;
+}
+
+/* Keeps the app phone-width on big screens (mobile first). */
+.app-shell {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--sand-100);
+}
+
+.section-label {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* Shared white card */
+.card {
+  background: var(--white);
+  border: 1px solid var(--khaki-300);
+  border-radius: var(--radius-card);
+}
+
+/* ---------- Shared page layout (Plan, Stats, ...) ---------- */
+.page {
+  flex-grow: 1;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.page-status {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.page-error {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #f5ddd0;
+  color: #8a3310;
+  font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  height: 48px;
+  padding: 0 16px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn--outline {
+  border: 2px solid var(--olive-900);
+  background: transparent;
+  color: var(--olive-900);
+}
+
+.btn--dark {
+  border: none;
+  background: var(--olive-900);
+  color: var(--gold-500);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Hidden on screen but read by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
